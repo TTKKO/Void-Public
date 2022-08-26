@@ -18,7 +18,7 @@ Void is a massive code-base, navigating it can be confusing.
 
 Client functionality can be found inside *core/hooks/events.cpp*\
 Engine anti-crash implementation can be found inside *core/hooks/patches.cpp*\
-Non-engine anti-crash implementation can be found inside *core/hooks/helpers/assetbundle_processor.cpp*\
+Non-Engine anti-crash implementation can be found inside *core/hooks/helpers/assetbundle_processor.cpp*\
 Photon anti-crash implementation can be found inside *core/hooks/events.cpp* & *core/hooks/eventmap.cpp*
 
 Game & Engine class reflection can be found inside *core/assembler/*\
