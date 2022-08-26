@@ -2,7 +2,8 @@
  *		detours/cinlinedetour.hpp
  *		Void
  *
- *		Copyright � 2021 Azurilex. All rights reserved.
+ *		Copyright © 2021 Azurilex. All rights reserved.
+  *		Copyright © 2019 Greengray. All rights reserved.
  *		Inline detouring
  */
 
