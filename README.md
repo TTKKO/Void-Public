@@ -11,6 +11,7 @@ Void is an internal cheat made for VRChat in C++. Void was discontinued in Augus
 * [ocornut](https://github.com/ocornut) - imgui maintainer
 * [rollraw](https://github.com/rollraw) - imgui styles, color class, & a couple memory related classes
 * [stellar](https://github.com/ImStellar) - emotional support & helped with some photon related stuff
+* [requi](https://github.com/RequiDev) - collaborated a few times on patching engine related crashes 
 * darktrix, josh, poison, regan, unixian, jordan - best staff team i could've asked for
 
 ## Information
