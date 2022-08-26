@@ -3,6 +3,7 @@
 Void is an internal cheat made for VRChat in C++. Void was discontinued in late July of 2022 due to the implementation of Easy Anti-Cheat. I decided it would be smarter to focus more on my education and University work rather than playing cat-and-mouse with EAC. 
 ### Notes
 * This code is licensed under the GNU GPLv3 license, meaning you can do anything you want with the code, but it ***cannot be closed source***. Please contact me for permission if you would like to use some of this code in a closed source project at a@uwu.me.
+* If you open this in Visual Studio, do not use VS's filters, instead make sure you click to "Show All Files" box.
 * Authentication & server communication is omitted.
 * VMProtect SDK is omitted.
 #### Credits
@@ -18,7 +19,7 @@ Void is a massive code-base, navigating it can be confusing.
 Client functionality can be found inside *core/hooks/events.cpp*\
 Engine anti-crash implementation can be found inside *core/hooks/patches.cpp*\
 Non-engine anti-crash implementation can be found inside *core/hooks/helpers/assetbundle_processor.cpp*\
-Photon anti--crash implementation can be found inside *core/hooks/events.cpp* & *core/hooks/eventmap.cpp*
+Photon anti-crash implementation can be found inside *core/hooks/events.cpp* & *core/hooks/eventmap.cpp*
 
 Game & Engine class reflection can be found inside *core/assembler/*\
 Mono reflection can be found inside *core/assembler/mono/*\
