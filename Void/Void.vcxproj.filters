@@ -1,0 +1,1136 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cc;cxx;c++;cppm;ixx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="Header Files">
+      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
+      <Extensions>h;hh;hpp;hxx;h++;hm;inl;inc;ipp;xsd</Extensions>
+    </Filter>
+    <Filter Include="imgui">
+      <UniqueIdentifier>{2c8aab6c-b398-45bc-8114-df3a22893f6e}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="hooking">
+      <UniqueIdentifier>{9e3b4822-855c-4d35-a5b6-fd264c3645d0}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="detours">
+      <UniqueIdentifier>{af1c1a83-2a54-4bed-b430-0d03eb845287}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="VRC">
+      <UniqueIdentifier>{837a1fe4-13f7-46df-b1c0-72ab78c4dcb5}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="VRC\UI">
+      <UniqueIdentifier>{ee137086-8f7a-4cef-b0a9-f58aea1b6e56}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="VRC\Udon">
+      <UniqueIdentifier>{33561167-ff9a-44b0-8290-f9ea551d66e2}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="VRC\Core">
+      <UniqueIdentifier>{a28b3d36-8a25-4681-b97e-998ba161e391}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="VRC\Udon\Serialization">
+      <UniqueIdentifier>{61b75751-8850-43a9-9535-8b13bc2502a9}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="VRC\Udon\Serialization\OdinSerializer">
+      <UniqueIdentifier>{ebc4cb47-f729-463c-a2bb-51101d1ebbed}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="UnityEngine">
+      <UniqueIdentifier>{ce50c50f-ae58-4d91-84d3-eaf19f513f52}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="UnityEngine\Events">
+      <UniqueIdentifier>{7bd4985a-c84d-4c7c-8150-3f8413239d71}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="UnityEngine\UI">
+      <UniqueIdentifier>{5ff51a13-36a8-434b-9334-6c0a322a176f}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Assembly-CSharp">
+      <UniqueIdentifier>{447c3f48-9f78-4a1c-9f39-6158eb7fe83f}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Assembly-CSharp\System">
+      <UniqueIdentifier>{766451cc-f426-4a8c-89bd-146703b74372}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Assembly-CSharp\System\Collections">
+      <UniqueIdentifier>{25833868-0528-4c36-a624-30c9a1970a06}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Assembly-CSharp\System\Reflection">
+      <UniqueIdentifier>{4f5176a0-bcb4-4fdf-b045-34070b08b202}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Utils">
+      <UniqueIdentifier>{c66a9308-a2e8-4ffc-8e9b-2c710fb14fc7}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="DiscordRPC">
+      <UniqueIdentifier>{11114edd-e6fd-4242-801d-d3d23afc51a6}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="imgui\FileBrowser">
+      <UniqueIdentifier>{cd21ba07-838b-4e57-9c0d-4bf916e42bf5}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="imgui\FileBrowser\Dirent">
+      <UniqueIdentifier>{4f90deaf-0b02-471d-aa10-9b5c536ff09e}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="vrchooks">
+      <UniqueIdentifier>{62273e63-ed63-434d-b5e0-0945a0fe2006}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="il2cpp">
+      <UniqueIdentifier>{20c18219-da5a-4240-8200-4af633862285}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="TMPro">
+      <UniqueIdentifier>{567d9c59-c4f0-4932-adb5-088e3e332e6f}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="hooking\kiero">
+      <UniqueIdentifier>{9ca80037-e241-4e93-8679-8517ea26519d}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="VRC\SDKBase">
+      <UniqueIdentifier>{3a38e95b-bc27-41f0-b75e-d53b8ccfb4dd}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="VRC\SDK3">
+      <UniqueIdentifier>{1e350a5b-759a-43d8-b8f0-d7ba6e6ce41c}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="core\core.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="core\assembler\vrc\playermanager.cpp">
+      <Filter>VRC</Filter>
+    </ClCompile>
+    <ClCompile Include="core\assembler\vrc\player.cpp">
+      <Filter>VRC</Filter>
+    </ClCompile>
+    <ClCompile Include="core\assembler\vrc\sdkbase\vrcplayerapi.cpp">
+      <Filter>VRC\SDKBase</Filter>
+    </ClCompile>
+    <ClCompile Include="core\assembler\vrc\sdkbase\networking.cpp">
+      <Filter>VRC\SDKBase</Filter>
+    </ClCompile>
+    <ClCompile Include="core\assembler\vrc\sdkbase\eventhandler.cpp">
+      <Filter>VRC\SDKBase</Filter>
+    </ClCompile>
+    <ClCompile Include="core\assembler\vrc\ui\pageavatar.cpp">
+      <Filter>VRC\UI</Filter>
+    </ClCompile>
+    <ClCompile Include="core\assembler\vrc\udon\serialization\odinserializer\properbitconverter.cpp">
+      <Filter>VRC\Udon\Serialization\OdinSerializer</Filter>
+    </ClCompile>
+    <ClCompile Include="core\assembler\vrc\core\apiworld.cpp">
+      <Filter>VRC\Core</Filter>
+    </ClCompile>
+    <ClCompile Include="core\assembler\vrc\core\apiworldinstance.cpp">
+      <Filter>VRC\Core</Filter>
+    </ClCompile>
+    <ClCompile Include="core\assembler\vrc\core\apiavatar.cpp">
+      <Filter>VRC\Core</Filter>
+    </ClCompile>
+    <ClCompile Include="core\assembler\vrc\core\apiuser.cpp">
+      <Filter>VRC\Core</Filter>
+    </ClCompile>
+    <ClCompile Include="core\assembler\unityengine\image.cpp">
+      <Filter>UnityEngine</Filter>
+    </ClCompile>
+    <ClCompile Include="core\assembler\unityengine\material.cpp">
+      <Filter>UnityEngine</Filter>
+    </ClCompile>
+    <ClCompile Include="core\assembler\unityengine\ray.cpp">
+      <Filter>UnityEngine</Filter>
+    </ClCompile>
+    <ClCompile Include="core\assembler\unityengine\renderer.cpp">
+      <Filter>UnityEngine</Filter>
+    </ClCompile>
+    <ClCompile Include="core\assembler\unityengine\sprite.cpp">
+      <Filter>UnityEngine</Filter>
+    </ClCompile>
+    <ClCompile Include="core\assembler\unityengine\transform.cpp">
+      <Filter>UnityEngine</Filter>
+    </ClCompile>
+    <ClCompile Include="core\assembler\unityengine\application.cpp">
+      <Filter>UnityEngine</Filter>
+    </ClCompile>
+    <ClCompile Include="core\assembler\unityengine\camera.cpp">
+      <Filter>UnityEngine</Filter>
+    </ClCompile>
+    <ClCompile Include="core\assembler\unityengine\collider.cpp">
+      <Filter>UnityEngine</Filter>
+    </ClCompile>
+    <ClCompile Include="core\assembler\unityengine\component.cpp">
+      <Filter>UnityEngine</Filter>
+    </ClCompile>
+    <ClCompile Include="core\assembler\unityengine\events\action.cpp">
+      <Filter>UnityEngine\Events</Filter>
+    </ClCompile>
+    <ClCompile Include="core\assembler\unityengine\events\event.cpp">
+      <Filter>UnityEngine\Events</Filter>
+    </ClCompile>
+    <ClCompile Include="core\assembler\unityengine\ui\text.cpp">
+      <Filter>UnityEngine\UI</Filter>
+    </ClCompile>
+    <ClCompile Include="core\assembler\unityengine\ui\graphic.cpp">
+      <Filter>UnityEngine\UI</Filter>
+    </ClCompile>
+    <ClCompile Include="core\assembler\unityengine\ui\selectable.cpp">
+      <Filter>UnityEngine\UI</Filter>
+    </ClCompile>
+    <ClCompile Include="core\assembler\il2cpp\il2cpp.cpp">
+      <Filter>il2cpp</Filter>
+    </ClCompile>
+    <ClCompile Include="core\assembler\assembly-csharp\ui_manager_impl.cpp">
+      <Filter>Assembly-CSharp</Filter>
+    </ClCompile>
+    <ClCompile Include="core\assembler\assembly-csharp\roommanager.cpp">
+      <Filter>Assembly-CSharp</Filter>
+    </ClCompile>
+    <ClCompile Include="core\assembler\assembly-csharp\vrcplayer.cpp">
+      <Filter>Assembly-CSharp</Filter>
+    </ClCompile>
+    <ClCompile Include="core\assembler\assembly-csharp\vrcuimanager.cpp">
+      <Filter>Assembly-CSharp</Filter>
+    </ClCompile>
+    <ClCompile Include="core\assembler\assembly-csharp\vrcuipage.cpp">
+      <Filter>Assembly-CSharp</Filter>
+    </ClCompile>
+    <ClCompile Include="core\assembler\assembly-csharp\vrcuipopupmanager.cpp">
+      <Filter>Assembly-CSharp</Filter>
+    </ClCompile>
+    <ClCompile Include="core\assembler\assembly-csharp\player_nameplate.cpp">
+      <Filter>Assembly-CSharp</Filter>
+    </ClCompile>
+    <ClCompile Include="core\assembler\unityengine\ui\button.cpp">
+      <Filter>Assembly-CSharp</Filter>
+    </ClCompile>
+    <ClCompile Include="core\assembler\assembly-csharp\buttonclickedevent.cpp">
+      <Filter>Assembly-CSharp</Filter>
+    </ClCompile>
+    <ClCompile Include="core\assembler\assembly-csharp\eventdata.cpp">
+      <Filter>Assembly-CSharp</Filter>
+    </ClCompile>
+    <ClCompile Include="core\assembler\assembly-csharp\highlightsfx.cpp">
+      <Filter>Assembly-CSharp</Filter>
+    </ClCompile>
+    <ClCompile Include="core\assembler\assembly-csharp\moderationmanager.cpp">
+      <Filter>Assembly-CSharp</Filter>
+    </ClCompile>
+    <ClCompile Include="core\assembler\common.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="core\assembler\unityengine\gameobject.cpp">
+      <Filter>UnityEngine</Filter>
+    </ClCompile>
+    <ClCompile Include="core\assembler\vrc\vrcsocialmenu.cpp">
+      <Filter>VRC</Filter>
+    </ClCompile>
+    <ClCompile Include="discordrpc\discord.cpp">
+      <Filter>DiscordRPC</Filter>
+    </ClCompile>
+    <ClCompile Include="core\assembler\vrc\avatarmanager.cpp">
+      <Filter>VRC</Filter>
+    </ClCompile>
+    <ClCompile Include="core\assembler\tmpro\tmp_text.cpp">
+      <Filter>TMPro</Filter>
+    </ClCompile>
+    <ClCompile Include="core\assembler\assembly-csharp\toggleclickedevent.cpp">
+      <Filter>Assembly-CSharp</Filter>
+    </ClCompile>
+    <ClCompile Include="core\assembler\assembly-csharp\uspeaker.cpp">
+      <Filter>Assembly-CSharp</Filter>
+    </ClCompile>
+    <ClCompile Include="core\assembler\unityengine\ui\toggle.cpp">
+      <Filter>Assembly-CSharp</Filter>
+    </ClCompile>
+    <ClCompile Include="core\assembler\assembly-csharp\system\buffer.cpp">
+      <Filter>Assembly-CSharp\System</Filter>
+    </ClCompile>
+    <ClCompile Include="core\assembler\unityengine\particle_system.cpp">
+      <Filter>UnityEngine</Filter>
+    </ClCompile>
+    <ClCompile Include="core\assembler\unityengine\shader.cpp">
+      <Filter>UnityEngine</Filter>
+    </ClCompile>
+    <ClCompile Include="core\assembler\unityengine\texture_2d.cpp">
+      <Filter>UnityEngine</Filter>
+    </ClCompile>
+    <ClCompile Include="core\assembler\unityengine\gui.cpp">
+      <Filter>UnityEngine</Filter>
+    </ClCompile>
+    <ClCompile Include="core\assembler\unityengine\gizmos.cpp">
+      <Filter>UnityEngine</Filter>
+    </ClCompile>
+    <ClCompile Include="core\assembler\unityengine\texture.cpp">
+      <Filter>UnityEngine</Filter>
+    </ClCompile>
+    <ClCompile Include="core\assembler\unityengine\screen.cpp">
+      <Filter>UnityEngine</Filter>
+    </ClCompile>
+    <ClCompile Include="core\assembler\unityengine\rect.cpp">
+      <Filter>UnityEngine</Filter>
+    </ClCompile>
+    <ClCompile Include="core\assembler\unityengine\gl.cpp">
+      <Filter>UnityEngine</Filter>
+    </ClCompile>
+    <ClCompile Include="core\assembler\unityengine\skinnedmeshrenderer.cpp">
+      <Filter>UnityEngine</Filter>
+    </ClCompile>
+    <ClCompile Include="core\assembler\unityengine\mesh.cpp">
+      <Filter>UnityEngine</Filter>
+    </ClCompile>
+    <ClCompile Include="core\assembler\unityengine\meshfilter.cpp">
+      <Filter>UnityEngine</Filter>
+    </ClCompile>
+    <ClCompile Include="core\assembler\vrc\sdk3\vrcavatardescriptor.cpp">
+      <Filter>VRC\SDK3</Filter>
+    </ClCompile>
+    <ClCompile Include="core\assembler\unityengine\input.cpp">
+      <Filter>UnityEngine</Filter>
+    </ClCompile>
+    <ClCompile Include="core\assembler\unityengine\ui\gridlayoutgroup.cpp">
+      <Filter>UnityEngine\UI</Filter>
+    </ClCompile>
+    <ClCompile Include="core\assembler\assembly-csharp\vrc_eventlog.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="core\assembler\assembly-csharp\vrc_eventreplicator.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="core\assembler\unityengine\meshrenderer.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="core\assembler\unityengine\particlesystemrenderer.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="core\assembler\vrc\sdk3\expressionsmenu.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="core\assembler\unityengine\cloth.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="core\assembler\unityengine\trailrenderer.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="core\assembler\unityengine\boxcollider.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="core\assembler\unityengine\spherecollider.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="core\assembler\unityengine\animation.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="core\assembler\unityengine\springjoint.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="core\assembler\assembly-csharp\photon_player.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="core\assembler\unityengine\cursor.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="core\config.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="core\menu.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="utilities\button_api.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="utilities\ingame_logging.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="utilities\misc_utils.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="utilities\drawing.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="utilities\utilities.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="core\hooks\dx11.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="core\hooks\eventmap.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="core\hooks\events.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="core\sdk\input_system.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="core\assembler\unityengine\time.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="core\assembler\unityengine\scene.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="utilities\memory.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="core\sdk\datatypes\matrix.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="core\sdk\datatypes\quaternion.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="core\assembler\unityengine\xrdevice.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="core\hooks\helpers\helpers.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="core\assembler\assembly-csharp\dynamic_bone.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="core\assembler\assembly-csharp\dynamic_bone_collider.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="core\assembler\vrc\core\pipeline_manager.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="core\assembler\unityengine\layer_mask.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="core\hooks\patches.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="core\hooks\helpers\xs_overlay.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="core\assembler\unityengine\ui\slider.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="core\assembler\assembly-csharp\slider_slide_event.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="core\assembler\vrc\modules\menu_modules.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="core\assembler\vrc\modules\main_modules.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="core\assembler\vrc\modules\safety_modules.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="core\assembler\vrc\modules\safety2_modules.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="core\assembler\vrc\modules\misc_modules.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="core\assembler\vrc\modules\misc2_modules.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="core\assembler\vrc\modules\utility_modules.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="core\assembler\vrc\modules\config_modules.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="core\assembler\vrc\modules\customization_modules.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="core\assembler\vrc\modules\submenus\rank_colors_submenu.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="core\assembler\unityengine\recttransform.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="core\assembler\vrc\modules\submenus\notifier_submenu.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="core\assembler\vrc\modules\submenus\spoofing_submenu.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="core\hooks\helpers\nameplates.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="core\assembler\vrc\modules\instance_history.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="core\assembler\unityengine\xrsettings.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="core\assembler\vrc\modules\lovense_modules.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="core\assembler\vrc\vrcquickmenu.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="dependencies\imgui\imgui.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="dependencies\imgui\imgui_draw.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="dependencies\imgui\imgui_freetype.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="dependencies\imgui\imgui_impl_dx11.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="dependencies\imgui\imgui_impl_win32.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="dependencies\imgui\imgui_stdlib.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="dependencies\imgui\imgui_tables.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="dependencies\imgui\imgui_widgets.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="dependencies\kiero\kiero.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="core\assembler\assembly-csharp\ui_vrc_list.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="core\hooks\helpers\camera_handler.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="core\hooks\helpers\friend_tool.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="core\assembler\assembly-csharp\system\collections\queue.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="core\assembler\assembly-csharp\assetbundle_download_manager.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="core\assembler\unityengine\behaviour.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="core\assembler\assembly-csharp\system\collections\arraylist.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="core\hooks\helpers\game_manager.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="core\assembler\vrc\sdkbase\vrc_pickup.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="core\assembler\assembly-csharp\udon_sync.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="core\assembler\vrc\modules\game_modules.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="core\assembler\vrc\modules\submenus\murder4_submenu.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="core\hooks\helpers\assetbundle_processor.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="core\assembler\unityengine\webreq_assetbundle.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="core\assembler\unityengine\assetbundle.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="core\hooks\helpers\portable_mirror.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="core\assembler\unityengine\rigidbody.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="core\assembler\vrc\modules\portable_mirror_modules.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="core\assembler\vrc\sdkbase\vrc_mirror_reflection.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="core\assembler\unityengine\capsulecollider.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="core\assembler\unityengine\animator.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="core\assembler\assembly-csharp\system\system_action.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="core\lvm\vlvm.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="core\lvm\env.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="core\assembler\assembly-csharp\vrc_tracking_manager.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="core\assembler\mono\mono.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="core\assembler\unityengine\linerenderer.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="core\submenus\sniffer.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="core\assembler\assembly-csharp\userselectionmanager.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="globals.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="core\assembler\vrc\playermanager.hpp">
+      <Filter>VRC</Filter>
+    </ClInclude>
+    <ClInclude Include="core\assembler\vrc\player.hpp">
+      <Filter>VRC</Filter>
+    </ClInclude>
+    <ClInclude Include="core\assembler\vrc\sdkbase\eventhandler.hpp">
+      <Filter>VRC\SDKBase</Filter>
+    </ClInclude>
+    <ClInclude Include="core\assembler\vrc\sdkbase\vrcplayerapi.hpp">
+      <Filter>VRC\SDKBase</Filter>
+    </ClInclude>
+    <ClInclude Include="core\assembler\vrc\sdkbase\networking.hpp">
+      <Filter>VRC\SDKBase</Filter>
+    </ClInclude>
+    <ClInclude Include="core\assembler\vrc\ui\pageavatar.hpp">
+      <Filter>VRC\UI</Filter>
+    </ClInclude>
+    <ClInclude Include="core\assembler\vrc\udon\serialization\odinserializer\properbitconverter.hpp">
+      <Filter>VRC\Udon\Serialization\OdinSerializer</Filter>
+    </ClInclude>
+    <ClInclude Include="core\assembler\vrc\core\apiuser.hpp">
+      <Filter>VRC\Core</Filter>
+    </ClInclude>
+    <ClInclude Include="core\assembler\vrc\core\apiworld.hpp">
+      <Filter>VRC\Core</Filter>
+    </ClInclude>
+    <ClInclude Include="core\assembler\vrc\core\apiworldinstance.hpp">
+      <Filter>VRC\Core</Filter>
+    </ClInclude>
+    <ClInclude Include="core\assembler\vrc\core\apiavatar.hpp">
+      <Filter>VRC\Core</Filter>
+    </ClInclude>
+    <ClInclude Include="core\assembler\unityengine\component.hpp">
+      <Filter>UnityEngine</Filter>
+    </ClInclude>
+    <ClInclude Include="core\assembler\unityengine\gameobject.hpp">
+      <Filter>UnityEngine</Filter>
+    </ClInclude>
+    <ClInclude Include="core\assembler\unityengine\image.hpp">
+      <Filter>UnityEngine</Filter>
+    </ClInclude>
+    <ClInclude Include="core\assembler\unityengine\input.hpp">
+      <Filter>UnityEngine</Filter>
+    </ClInclude>
+    <ClInclude Include="core\assembler\unityengine\material.hpp">
+      <Filter>UnityEngine</Filter>
+    </ClInclude>
+    <ClInclude Include="core\assembler\unityengine\ray.hpp">
+      <Filter>UnityEngine</Filter>
+    </ClInclude>
+    <ClInclude Include="core\assembler\unityengine\recttransform.hpp">
+      <Filter>UnityEngine</Filter>
+    </ClInclude>
+    <ClInclude Include="core\assembler\unityengine\renderer.hpp">
+      <Filter>UnityEngine</Filter>
+    </ClInclude>
+    <ClInclude Include="core\assembler\unityengine\sprite.hpp">
+      <Filter>UnityEngine</Filter>
+    </ClInclude>
+    <ClInclude Include="core\assembler\unityengine\transform.hpp">
+      <Filter>UnityEngine</Filter>
+    </ClInclude>
+    <ClInclude Include="core\assembler\unityengine\application.hpp">
+      <Filter>UnityEngine</Filter>
+    </ClInclude>
+    <ClInclude Include="core\assembler\unityengine\camera.hpp">
+      <Filter>UnityEngine</Filter>
+    </ClInclude>
+    <ClInclude Include="core\assembler\unityengine\collider.hpp">
+      <Filter>UnityEngine</Filter>
+    </ClInclude>
+    <ClInclude Include="core\assembler\unityengine\events\event.hpp">
+      <Filter>UnityEngine\Events</Filter>
+    </ClInclude>
+    <ClInclude Include="core\assembler\unityengine\events\action.hpp">
+      <Filter>UnityEngine\Events</Filter>
+    </ClInclude>
+    <ClInclude Include="core\assembler\unityengine\ui\selectable.hpp">
+      <Filter>UnityEngine\UI</Filter>
+    </ClInclude>
+    <ClInclude Include="core\assembler\unityengine\ui\text.hpp">
+      <Filter>UnityEngine\UI</Filter>
+    </ClInclude>
+    <ClInclude Include="core\assembler\unityengine\ui\graphic.hpp">
+      <Filter>UnityEngine\UI</Filter>
+    </ClInclude>
+    <ClInclude Include="core\assembler\il2cpp\il2cpp.hpp">
+      <Filter>il2cpp</Filter>
+    </ClInclude>
+    <ClInclude Include="core\assembler\il2cpp\array_wrapper.hpp">
+      <Filter>il2cpp</Filter>
+    </ClInclude>
+    <ClInclude Include="core\assembler\assembly-csharp\moderationmanager.hpp">
+      <Filter>Assembly-CSharp</Filter>
+    </ClInclude>
+    <ClInclude Include="core\assembler\assembly-csharp\ui_manager_impl.hpp">
+      <Filter>Assembly-CSharp</Filter>
+    </ClInclude>
+    <ClInclude Include="core\assembler\assembly-csharp\roommanager.hpp">
+      <Filter>Assembly-CSharp</Filter>
+    </ClInclude>
+    <ClInclude Include="core\assembler\assembly-csharp\vrcplayer.hpp">
+      <Filter>Assembly-CSharp</Filter>
+    </ClInclude>
+    <ClInclude Include="core\assembler\assembly-csharp\vrcuimanager.hpp">
+      <Filter>Assembly-CSharp</Filter>
+    </ClInclude>
+    <ClInclude Include="core\assembler\assembly-csharp\vrcuipage.hpp">
+      <Filter>Assembly-CSharp</Filter>
+    </ClInclude>
+    <ClInclude Include="core\assembler\assembly-csharp\vrcuipopupmanager.hpp">
+      <Filter>Assembly-CSharp</Filter>
+    </ClInclude>
+    <ClInclude Include="core\assembler\assembly-csharp\player_nameplate.hpp">
+      <Filter>Assembly-CSharp</Filter>
+    </ClInclude>
+    <ClInclude Include="core\assembler\unityengine\ui\button.hpp">
+      <Filter>Assembly-CSharp</Filter>
+    </ClInclude>
+    <ClInclude Include="core\assembler\assembly-csharp\buttonclickedevent.hpp">
+      <Filter>Assembly-CSharp</Filter>
+    </ClInclude>
+    <ClInclude Include="core\assembler\assembly-csharp\eventdata.hpp">
+      <Filter>Assembly-CSharp</Filter>
+    </ClInclude>
+    <ClInclude Include="core\assembler\assembly-csharp\highlightsfx.hpp">
+      <Filter>Assembly-CSharp</Filter>
+    </ClInclude>
+    <ClInclude Include="core\assembler\assembly-csharp\system\collections\dictionary.hpp">
+      <Filter>Assembly-CSharp\System\Collections</Filter>
+    </ClInclude>
+    <ClInclude Include="core\assembler\common.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="core\assembler\vrc\vrcsocialmenu.hpp">
+      <Filter>VRC</Filter>
+    </ClInclude>
+    <ClInclude Include="core\assembler\vrc\vrcquickmenu.hpp">
+      <Filter>VRC</Filter>
+    </ClInclude>
+    <ClInclude Include="offsets.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="discordrpc\discord.hpp">
+      <Filter>DiscordRPC</Filter>
+    </ClInclude>
+    <ClInclude Include="detours\cinlinedetour.hpp">
+      <Filter>detours</Filter>
+    </ClInclude>
+    <ClInclude Include="core\assembler\vrc\avatarmanager.hpp">
+      <Filter>VRC</Filter>
+    </ClInclude>
+    <ClInclude Include="core\assembler\tmpro\tmp_text.hpp">
+      <Filter>TMPro</Filter>
+    </ClInclude>
+    <ClInclude Include="core\assembler\assembly-csharp\toggleclickedevent.hpp">
+      <Filter>Assembly-CSharp</Filter>
+    </ClInclude>
+    <ClInclude Include="core\assembler\assembly-csharp\uspeaker.hpp">
+      <Filter>Assembly-CSharp</Filter>
+    </ClInclude>
+    <ClInclude Include="core\assembler\unityengine\ui\toggle.hpp">
+      <Filter>Assembly-CSharp</Filter>
+    </ClInclude>
+    <ClInclude Include="core\assembler\assembly-csharp\system\buffer.hpp">
+      <Filter>Assembly-CSharp\System</Filter>
+    </ClInclude>
+    <ClInclude Include="core\assembler\unityengine\particle_system.hpp">
+      <Filter>UnityEngine</Filter>
+    </ClInclude>
+    <ClInclude Include="core\assembler\unityengine\shader.hpp">
+      <Filter>UnityEngine</Filter>
+    </ClInclude>
+    <ClInclude Include="core\assembler\unityengine\texture_2d.hpp">
+      <Filter>UnityEngine</Filter>
+    </ClInclude>
+    <ClInclude Include="core\assembler\unityengine\gui.hpp">
+      <Filter>UnityEngine</Filter>
+    </ClInclude>
+    <ClInclude Include="core\assembler\unityengine\gizmos.hpp">
+      <Filter>UnityEngine</Filter>
+    </ClInclude>
+    <ClInclude Include="core\assembler\unityengine\texture.hpp">
+      <Filter>UnityEngine</Filter>
+    </ClInclude>
+    <ClInclude Include="core\assembler\unityengine\screen.hpp">
+      <Filter>UnityEngine</Filter>
+    </ClInclude>
+    <ClInclude Include="core\assembler\unityengine\rect.hpp">
+      <Filter>UnityEngine</Filter>
+    </ClInclude>
+    <ClInclude Include="core\assembler\unityengine\gl.hpp">
+      <Filter>UnityEngine</Filter>
+    </ClInclude>
+    <ClInclude Include="core\assembler\unityengine\skinnedmeshrenderer.hpp">
+      <Filter>UnityEngine</Filter>
+    </ClInclude>
+    <ClInclude Include="core\assembler\unityengine\mesh.hpp">
+      <Filter>UnityEngine</Filter>
+    </ClInclude>
+    <ClInclude Include="core\assembler\unityengine\meshfilter.hpp">
+      <Filter>UnityEngine</Filter>
+    </ClInclude>
+    <ClInclude Include="core\assembler\vrc\sdk3\vrcavatardescriptor.hpp">
+      <Filter>VRC\SDK3</Filter>
+    </ClInclude>
+    <ClInclude Include="core\assembler\unityengine\ui\gridlayoutgroup.hpp">
+      <Filter>UnityEngine\UI</Filter>
+    </ClInclude>
+    <ClInclude Include="core\assembler\assembly-csharp\vrc_eventlog.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="core\assembler\assembly-csharp\vrc_eventreplicator.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="core\assembler\unityengine\meshrenderer.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="core\assembler\unityengine\particlesystemrenderer.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="core\assembler\vrc\sdk3\expressionsmenu.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="core\assembler\unityengine\cloth.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="core\assembler\unityengine\trailrenderer.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="core\assembler\unityengine\boxcollider.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="core\assembler\unityengine\spherecollider.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="core\assembler\unityengine\animation.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="core\assembler\unityengine\springjoint.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="core\assembler\assembly-csharp\photon_player.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="resources\whitney.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="core\assembler\unityengine\cursor.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="core\config.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="core\menu.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="utilities\button_api.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="utilities\ingame_logging.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="utilities\misc_utils.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="core\sdk\hash\sha1.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="utilities\drawing.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="utilities\utilities.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="core\hooks\dx11.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="core\hooks\eventmap.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="core\hooks\events.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="core\hooks\patches.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="core\sdk\datatypes\color.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="core\sdk\hash\fnv1a.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="core\sdk\input_system.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="core\assembler\unityengine\time.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="core\sdk\hash\xorstr.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="core\assembler\unityengine\scene.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="utilities\memory.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="core\sdk\datatypes\vector.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="core\sdk\datatypes\matrix.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="core\sdk\datatypes\quaternion.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="core\assembler\unityengine\xrdevice.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="core\hooks\helpers\helpers.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="core\assembler\assembly-csharp\vrc_event.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="resource.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="core\assembler\assembly-csharp\dynamic_bone.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="core\assembler\assembly-csharp\dynamic_bone_collider.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="core\assembler\vrc\core\pipeline_manager.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="core\assembler\unityengine\layer_mask.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="detours\cdetourhook.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="core\hooks\helpers\xs_overlay.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="core\assembler\unityengine\ui\slider.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="core\assembler\assembly-csharp\slider_slide_event.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="core\assembler\vrc\modules\menu_modules.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="core\assembler\vrc\modules\main_modules.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="core\assembler\vrc\modules\safety_modules.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="core\assembler\vrc\modules\safety2_modules.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="core\assembler\vrc\modules\misc_modules.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="core\assembler\vrc\modules\misc2_modules.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="core\assembler\vrc\modules\utility_modules.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="core\assembler\vrc\modules\config_modules.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="core\assembler\vrc\modules\customization_modules.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="core\assembler\vrc\modules\submenus\rank_colors_submenu.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="core\assembler\vrc\modules\submenus\notifier_submenu.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="core\assembler\vrc\modules\submenus\spoofing_submenu.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="core\hooks\helpers\nameplates.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="core\assembler\vrc\modules\instance_history.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="utilities\memory\pe32.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="core\assembler\unityengine\xrsettings.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="core\assembler\vrc\modules\lovense_modules.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="core\assembler\vrc\core\api_model.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="core\assembler\il2cpp\structures\structures.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="resources\void_logo.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="dependencies\imgui\imconfig.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="dependencies\imgui\imgui.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="dependencies\imgui\imgui_freetype.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="dependencies\imgui\imgui_impl_dx11.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="dependencies\imgui\imgui_impl_win32.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="dependencies\imgui\imgui_internal.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="dependencies\imgui\imgui_stdlib.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="dependencies\imgui\imstb_rectpack.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="dependencies\imgui\imstb_textedit.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="dependencies\imgui\imstb_truetype.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="dependencies\kiero\kiero.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="core\assembler\assembly-csharp\ui_vrc_list.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="core\hooks\helpers\camera_handler.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="core\hooks\helpers\friend_tool.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="core\assembler\assembly-csharp\system\collections\queue.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="core\assembler\assembly-csharp\assetbundle_download_manager.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="core\assembler\unityengine\behaviour.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="core\assembler\assembly-csharp\system\collections\arraylist.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="core\hooks\helpers\game_manager.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="core\assembler\vrc\sdkbase\vrc_pickup.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="core\assembler\assembly-csharp\udon_sync.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="core\assembler\vrc\modules\game_modules.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="core\assembler\vrc\modules\submenus\murder4_submenu.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="core\hooks\helpers\assetbundle_processor.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="core\assembler\unityengine\webreq_assetbundle.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="core\assembler\unityengine\assetbundle.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="core\hooks\helpers\portable_mirror.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="core\assembler\unityengine\rigidbody.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="core\assembler\vrc\modules\portable_mirror_modules.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="core\assembler\vrc\sdkbase\vrc_mirror_reflection.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="resources\checkmark.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="core\assembler\unityengine\capsulecollider.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="core\assembler\unityengine\animator.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="core\assembler\assembly-csharp\system\system_action.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="core\lvm\vlvm.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="core\lvm\env.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="core\lvm\sol2\sol_config.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="core\lvm\sol2\sol_forward.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="core\lvm\sol2\sol.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="core\assembler\unityengine\character_controller.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="core\assembler\assembly-csharp\vrc_tracking_manager.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="core\assembler\mono\mono.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="core\assembler\mono\structures\structues.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="core\assembler\unityengine\linerenderer.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="core\submenus\sniffer.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="core\assembler\assembly-csharp\userselectionmanager.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Void.vcxproj.DotSettings" />
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="Void.rc" />
+  </ItemGroup>
+</Project>

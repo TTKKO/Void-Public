@@ -1,0 +1,1 @@
+X:\dev\freetype\objs\x64\Debug Static\freetype.lib

@@ -1,0 +1,552 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Debug|x64">
+      <Configuration>Debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|x64">
+      <Configuration>Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <VCProjectVersion>16.0</VCProjectVersion>
+    <Keyword>Win32Proj</Keyword>
+    <ProjectGuid>{75528174-c0c4-49e2-8f67-64295504fb09}</ProjectGuid>
+    <RootNamespace>Void</RootNamespace>
+    <WindowsTargetPlatformVersion>10.0</WindowsTargetPlatformVersion>
+    <VcpkgTriplet Condition="'$(Platform)'=='x64'">x64-windows-static</VcpkgTriplet>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <CharacterSet>Unicode</CharacterSet>
+    <UseOfMfc>Static</UseOfMfc>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v143</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>Unicode</CharacterSet>
+    <UseOfMfc>Static</UseOfMfc>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v143</PlatformToolset>
+    <CharacterSet>Unicode</CharacterSet>
+    <UseOfMfc>Static</UseOfMfc>
+    <CLRSupport>false</CLRSupport>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v143</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>Unicode</CharacterSet>
+    <UseOfMfc>Static</UseOfMfc>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+    <Import Project="$(VCTargetsPath)\BuildCustomizations\masm.props" />
+  </ImportGroup>
+  <ImportGroup Label="Shared">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <LinkIncremental>true</LinkIncremental>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <LinkIncremental>false</LinkIncremental>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <LinkIncremental>true</LinkIncremental>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <LinkIncremental>false</LinkIncremental>
+  </PropertyGroup>
+  <PropertyGroup Label="Vcpkg">
+    <VcpkgEnabled>true</VcpkgEnabled>
+  </PropertyGroup>
+  <PropertyGroup Label="Vcpkg" Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <VcpkgUseStatic>false</VcpkgUseStatic>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <SDLCheck>true</SDLCheck>
+      <PreprocessorDefinitions>CURL_STATICLIB;_CRT_SECURE_NO_WARNINGS;WIN32;_DEBUG;VOID_EXPORTS;_WINDOWS;_USRDLL;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ConformanceMode>true</ConformanceMode>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <PrecompiledHeaderFile>stdafx.h</PrecompiledHeaderFile>
+      <LanguageStandard>stdcpp17</LanguageStandard>
+      <AdditionalIncludeDirectories>C:\Users\Brenden\Documents\curl\x86 Debug\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ClCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <EnableUAC>false</EnableUAC>
+      <AdditionalDependencies>detours/detours.lib;Normaliz.lib;Ws2_32.lib;Wldap32.lib;Crypt32.lib;advapi32.lib;C:\Users\Brenden\Documents\curl\x86 Debug\lib\libcurl_a_debug.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <AdditionalLibraryDirectories>C:\Users\Brenden\source\repos\Void\minhook\lib;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <SDLCheck>true</SDLCheck>
+      <PreprocessorDefinitions>CURL_STATICLIB;_CRT_SECURE_NO_WARNINGS;WIN32;NDEBUG;VOID_EXPORTS;_WINDOWS;_USRDLL;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ConformanceMode>true</ConformanceMode>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <PrecompiledHeaderFile>stdafx.h</PrecompiledHeaderFile>
+      <LanguageStandard>stdcpp17</LanguageStandard>
+      <AdditionalIncludeDirectories>C:\Users\Brenden\Documents\curl\x86 Release\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ClCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <EnableUAC>false</EnableUAC>
+      <AdditionalDependencies>detours/detours.lib;Normaliz.lib;Ws2_32.lib;Wldap32.lib;Crypt32.lib;advapi32.lib;C:\Users\Brenden\Documents\curl\x86 Release\lib\libcurl_a.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <AdditionalLibraryDirectories>C:\Users\Brenden\source\repos\Void\minhook\lib;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <SDLCheck>true</SDLCheck>
+      <PreprocessorDefinitions>CURL_STATICLIB;SIO_TLS;_CRT_SECURE_NO_WARNINGS;NOMINMAX;_DEBUG;VOID_EXPORTS;_WINDOWS;_USRDLL;_SILENCE_CXX17_CODECVT_HEADER_DEPRECATION_WARNING;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ConformanceMode>true</ConformanceMode>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <PrecompiledHeaderFile>stdafx.h</PrecompiledHeaderFile>
+      <LanguageStandard>stdcpplatest</LanguageStandard>
+      <AdditionalIncludeDirectories>dependencies\minhook\include;dependencies\date-3.0.1;dependencies\freetype\include;dependencies\discord-rpc\include;dependencies\cryptocpp\include;dependencies\curl\Debug\include;dependencies\json;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <Optimization>Disabled</Optimization>
+      <DisableSpecificWarnings>4624;</DisableSpecificWarnings>
+      <ExceptionHandling>Sync</ExceptionHandling>
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+      <RuntimeLibrary>MultiThreadedDebug</RuntimeLibrary>
+      <ProgramDataBaseFileName>$(IntDir)Void).pdb</ProgramDataBaseFileName>
+    </ClCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+      <GenerateDebugInformation>false</GenerateDebugInformation>
+      <EnableUAC>false</EnableUAC>
+      <AdditionalDependencies>dependencies\freetype\lib\Debug Static\freetype.lib;dependencies\cryptocpp\lib\Debug\cryptlib.lib;dependencies\minhook\lib\Debug\minhook.x64d.lib;dependencies\curl\Debug\lib\libcurl_a_debug.lib;dependencies\discord-rpc\lib\discord-rpc_d.lib;shell32.lib;ole32.lib;Normaliz.lib;Ws2_32.lib;Wldap32.lib;Crypt32.lib;advapi32.lib;sioclient_tls.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <AdditionalLibraryDirectories>X:\dev\freetype\objs\x64\Debug Static\freetype.lib;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <SDLCheck>true</SDLCheck>
+      <PreprocessorDefinitions>SIO_TLS;WIN32_LEAN_AND_MEAN;_CRT_SECURE_NO_WARNINGS;CURL_STATICLIB;NOMINMAX;NDEBUG;_WINDOWS;_USRDLL;_SILENCE_CXX17_CODECVT_HEADER_DEPRECATION_WARNING;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ConformanceMode>true</ConformanceMode>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <PrecompiledHeaderFile>stdafx.h</PrecompiledHeaderFile>
+      <LanguageStandard>stdcpplatest</LanguageStandard>
+      <AdditionalIncludeDirectories>dependencies\date-3.0.1;dependencies\freetype\include;dependencies\discord-rpc\include;dependencies\minhook\include;dependencies\cryptocpp\include;dependencies\json;dependencies\curl\Release\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <DebugInformationFormat>None</DebugInformationFormat>
+      <DisableSpecificWarnings>4624;</DisableSpecificWarnings>
+      <ExceptionHandling>Sync</ExceptionHandling>
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+      <ControlFlowGuard>Guard</ControlFlowGuard>
+      <RuntimeLibrary>MultiThreaded</RuntimeLibrary>
+    </ClCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+      <GenerateDebugInformation>false</GenerateDebugInformation>
+      <EnableUAC>false</EnableUAC>
+      <AdditionalDependencies>dependencies\freetype\lib\Release Static\freetype.lib;dependencies\discord-rpc\lib\discord-rpc.lib;dependencies\cryptocpp\lib\Release\cryptlib.lib;dependencies\minhook\lib\Release\minhook.x64.lib;dependencies\curl\Release\lib\libcurl_a.lib;shell32.lib;Normaliz.lib;Ws2_32.lib;Wldap32.lib;Crypt32.lib;advapi32.lib;ole32.lib;sioclient_tls.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <AdditionalLibraryDirectories>X:\dev\freetype\objs\x64\Release Static\freetype.lib;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ClCompile Include="core\assembler\assembly-csharp\assetbundle_download_manager.cpp" />
+    <ClCompile Include="core\assembler\assembly-csharp\system\system_action.cpp" />
+    <ClCompile Include="core\assembler\assembly-csharp\system\collections\arraylist.cpp" />
+    <ClCompile Include="core\assembler\assembly-csharp\system\collections\queue.cpp" />
+    <ClCompile Include="core\assembler\assembly-csharp\udon_sync.cpp" />
+    <ClCompile Include="core\assembler\assembly-csharp\userselectionmanager.cpp" />
+    <ClCompile Include="core\assembler\assembly-csharp\vrc_tracking_manager.cpp" />
+    <ClCompile Include="core\assembler\mono\mono.cpp" />
+    <ClCompile Include="core\assembler\unityengine\animator.cpp" />
+    <ClCompile Include="core\assembler\unityengine\assetbundle.cpp" />
+    <ClCompile Include="core\assembler\unityengine\behaviour.cpp" />
+    <ClCompile Include="core\assembler\unityengine\capsulecollider.cpp" />
+    <ClCompile Include="core\assembler\unityengine\linerenderer.cpp" />
+    <ClCompile Include="core\assembler\unityengine\rigidbody.cpp" />
+    <ClCompile Include="core\assembler\unityengine\webreq_assetbundle.cpp" />
+    <ClCompile Include="core\assembler\vrc\modules\game_modules.cpp" />
+    <ClCompile Include="core\assembler\vrc\modules\portable_mirror_modules.cpp" />
+    <ClCompile Include="core\assembler\vrc\modules\submenus\murder4_submenu.cpp" />
+    <ClCompile Include="core\assembler\vrc\sdkbase\vrc_mirror_reflection.cpp" />
+    <ClCompile Include="core\assembler\vrc\sdkbase\vrc_pickup.cpp" />
+    <ClCompile Include="core\hooks\helpers\assetbundle_processor.cpp" />
+    <ClCompile Include="core\hooks\helpers\camera_handler.cpp" />
+    <ClCompile Include="core\assembler\assembly-csharp\slider_slide_event.cpp" />
+    <ClCompile Include="core\assembler\assembly-csharp\ui_vrc_list.cpp" />
+    <ClCompile Include="core\assembler\unityengine\recttransform.cpp" />
+    <ClCompile Include="core\assembler\unityengine\ui\button.cpp" />
+    <ClCompile Include="core\assembler\assembly-csharp\buttonclickedevent.cpp" />
+    <ClCompile Include="core\assembler\assembly-csharp\dynamic_bone.cpp" />
+    <ClCompile Include="core\assembler\assembly-csharp\dynamic_bone_collider.cpp" />
+    <ClCompile Include="core\assembler\assembly-csharp\eventdata.cpp" />
+    <ClCompile Include="core\assembler\assembly-csharp\highlightsfx.cpp" />
+    <ClCompile Include="core\assembler\assembly-csharp\moderationmanager.cpp" />
+    <ClCompile Include="core\assembler\assembly-csharp\system\buffer.cpp" />
+    <ClCompile Include="core\assembler\unityengine\ui\slider.cpp" />
+    <ClCompile Include="core\assembler\unityengine\ui\toggle.cpp" />
+    <ClCompile Include="core\assembler\assembly-csharp\toggleclickedevent.cpp" />
+    <ClCompile Include="core\assembler\assembly-csharp\ui_manager_impl.cpp" />
+    <ClCompile Include="core\assembler\assembly-csharp\roommanager.cpp" />
+    <ClCompile Include="core\assembler\assembly-csharp\uspeaker.cpp" />
+    <ClCompile Include="core\assembler\assembly-csharp\vrcplayer.cpp" />
+    <ClCompile Include="core\assembler\assembly-csharp\vrcuimanager.cpp" />
+    <ClCompile Include="core\assembler\assembly-csharp\vrcuipage.cpp" />
+    <ClCompile Include="core\assembler\assembly-csharp\vrcuipopupmanager.cpp" />
+    <ClCompile Include="core\assembler\assembly-csharp\player_nameplate.cpp" />
+    <ClCompile Include="core\assembler\assembly-csharp\vrc_eventlog.cpp" />
+    <ClCompile Include="core\assembler\assembly-csharp\photon_player.cpp" />
+    <ClCompile Include="core\assembler\unityengine\cursor.cpp" />
+    <ClCompile Include="core\assembler\unityengine\layer_mask.cpp" />
+    <ClCompile Include="core\assembler\unityengine\xrdevice.cpp" />
+    <ClCompile Include="core\assembler\unityengine\xrsettings.cpp" />
+    <ClCompile Include="core\assembler\vrc\core\pipeline_manager.cpp" />
+    <ClCompile Include="core\assembler\vrc\modules\config_modules.cpp" />
+    <ClCompile Include="core\assembler\vrc\modules\customization_modules.cpp" />
+    <ClCompile Include="core\assembler\vrc\modules\instance_history.cpp" />
+    <ClCompile Include="core\assembler\vrc\modules\lovense_modules.cpp" />
+    <ClCompile Include="core\assembler\vrc\modules\main_modules.cpp" />
+    <ClCompile Include="core\assembler\vrc\modules\menu_modules.cpp" />
+    <ClCompile Include="core\assembler\vrc\modules\misc2_modules.cpp" />
+    <ClCompile Include="core\assembler\vrc\modules\misc_modules.cpp" />
+    <ClCompile Include="core\assembler\vrc\modules\safety2_modules.cpp" />
+    <ClCompile Include="core\assembler\vrc\modules\safety_modules.cpp" />
+    <ClCompile Include="core\assembler\vrc\modules\submenus\notifier_submenu.cpp" />
+    <ClCompile Include="core\assembler\vrc\modules\submenus\rank_colors_submenu.cpp" />
+    <ClCompile Include="core\assembler\vrc\modules\submenus\spoofing_submenu.cpp" />
+    <ClCompile Include="core\assembler\vrc\modules\utility_modules.cpp" />
+    <ClCompile Include="core\assembler\vrc\vrcquickmenu.cpp" />
+    <ClCompile Include="core\config.cpp" />
+    <ClCompile Include="core\hooks\dx11.cpp" />
+    <ClCompile Include="core\hooks\eventmap.cpp" />
+    <ClCompile Include="core\hooks\events.cpp" />
+    <ClCompile Include="core\hooks\helpers\friend_tool.cpp" />
+    <ClCompile Include="core\hooks\helpers\nameplates.cpp" />
+    <ClCompile Include="core\hooks\helpers\game_manager.cpp" />
+    <ClCompile Include="core\hooks\helpers\portable_mirror.cpp" />
+    <ClCompile Include="core\hooks\helpers\xs_overlay.cpp" />
+    <ClCompile Include="core\hooks\patches.cpp" />
+    <ClCompile Include="core\lvm\env.cpp" />
+    <ClCompile Include="core\lvm\vlvm.cpp" />
+    <ClCompile Include="core\menu.cpp" />
+    <ClCompile Include="core\sdk\input_system.cpp" />
+    <ClCompile Include="core\hooks\helpers\helpers.cpp" />
+    <ClCompile Include="core\submenus\sniffer.cpp" />
+    <ClCompile Include="dependencies\imgui\imgui.cpp" />
+    <ClCompile Include="dependencies\imgui\imgui_draw.cpp" />
+    <ClCompile Include="dependencies\imgui\imgui_freetype.cpp" />
+    <ClCompile Include="dependencies\imgui\imgui_impl_dx11.cpp" />
+    <ClCompile Include="dependencies\imgui\imgui_impl_win32.cpp" />
+    <ClCompile Include="dependencies\imgui\imgui_stdlib.cpp" />
+    <ClCompile Include="dependencies\imgui\imgui_tables.cpp" />
+    <ClCompile Include="dependencies\imgui\imgui_widgets.cpp" />
+    <ClCompile Include="core\assembler\common.cpp" />
+    <ClCompile Include="dependencies\kiero\kiero.cpp" />
+    <ClCompile Include="discordrpc\discord.cpp" />
+    <ClCompile Include="core\assembler\il2cpp\il2cpp.cpp" />
+    <ClCompile Include="core\core.cpp" />
+    <ClCompile Include="core\assembler\tmpro\tmp_text.cpp" />
+    <ClCompile Include="core\assembler\unityengine\animation.cpp" />
+    <ClCompile Include="core\assembler\unityengine\application.cpp" />
+    <ClCompile Include="core\assembler\unityengine\boxcollider.cpp" />
+    <ClCompile Include="core\assembler\unityengine\camera.cpp" />
+    <ClCompile Include="core\assembler\unityengine\cloth.cpp" />
+    <ClCompile Include="core\assembler\unityengine\collider.cpp" />
+    <ClCompile Include="core\assembler\unityengine\component.cpp" />
+    <ClCompile Include="core\assembler\unityengine\events\action.cpp" />
+    <ClCompile Include="core\assembler\unityengine\events\event.cpp" />
+    <ClCompile Include="core\assembler\unityengine\gameobject.cpp" />
+    <ClCompile Include="core\assembler\unityengine\gizmos.cpp" />
+    <ClCompile Include="core\assembler\unityengine\gl.cpp" />
+    <ClCompile Include="core\assembler\unityengine\gui.cpp" />
+    <ClCompile Include="core\assembler\unityengine\image.cpp" />
+    <ClCompile Include="core\assembler\unityengine\input.cpp" />
+    <ClCompile Include="core\assembler\unityengine\material.cpp" />
+    <ClCompile Include="core\assembler\unityengine\mesh.cpp" />
+    <ClCompile Include="core\assembler\unityengine\meshfilter.cpp" />
+    <ClCompile Include="core\assembler\unityengine\meshrenderer.cpp" />
+    <ClCompile Include="core\assembler\unityengine\particlesystemrenderer.cpp" />
+    <ClCompile Include="core\assembler\unityengine\particle_system.cpp" />
+    <ClCompile Include="core\assembler\unityengine\ray.cpp" />
+    <ClCompile Include="core\assembler\unityengine\rect.cpp" />
+    <ClCompile Include="core\assembler\unityengine\renderer.cpp" />
+    <ClCompile Include="core\assembler\unityengine\screen.cpp" />
+    <ClCompile Include="core\assembler\unityengine\shader.cpp" />
+    <ClCompile Include="core\assembler\unityengine\skinnedmeshrenderer.cpp" />
+    <ClCompile Include="core\assembler\unityengine\spherecollider.cpp" />
+    <ClCompile Include="core\assembler\unityengine\springjoint.cpp" />
+    <ClCompile Include="core\assembler\unityengine\sprite.cpp" />
+    <ClCompile Include="core\assembler\unityengine\texture.cpp" />
+    <ClCompile Include="core\assembler\unityengine\texture_2d.cpp" />
+    <ClCompile Include="core\assembler\unityengine\trailrenderer.cpp" />
+    <ClCompile Include="core\assembler\unityengine\transform.cpp" />
+    <ClCompile Include="core\assembler\unityengine\ui\graphic.cpp" />
+    <ClCompile Include="core\assembler\unityengine\ui\gridlayoutgroup.cpp" />
+    <ClCompile Include="core\assembler\unityengine\ui\selectable.cpp" />
+    <ClCompile Include="core\assembler\unityengine\ui\text.cpp" />
+    <ClCompile Include="core\assembler\assembly-csharp\vrc_eventreplicator.cpp" />
+    <ClCompile Include="core\assembler\unityengine\time.cpp" />
+    <ClCompile Include="core\assembler\unityengine\scene.cpp" />
+    <ClCompile Include="core\sdk\datatypes\matrix.cpp" />
+    <ClCompile Include="core\sdk\datatypes\quaternion.cpp" />
+    <ClCompile Include="utilities\button_api.cpp" />
+    <ClCompile Include="utilities\drawing.cpp" />
+    <ClCompile Include="utilities\ingame_logging.cpp" />
+    <ClCompile Include="utilities\memory.cpp" />
+    <ClCompile Include="utilities\misc_utils.cpp" />
+    <ClCompile Include="utilities\utilities.cpp" />
+    <ClCompile Include="core\assembler\vrc\avatarmanager.cpp" />
+    <ClCompile Include="core\assembler\vrc\core\apiavatar.cpp" />
+    <ClCompile Include="core\assembler\vrc\core\apiuser.cpp" />
+    <ClCompile Include="core\assembler\vrc\core\apiworld.cpp" />
+    <ClCompile Include="core\assembler\vrc\core\apiworldinstance.cpp" />
+    <ClCompile Include="core\assembler\vrc\player.cpp" />
+    <ClCompile Include="core\assembler\vrc\playermanager.cpp" />
+    <ClCompile Include="core\assembler\vrc\sdk3\expressionsmenu.cpp" />
+    <ClCompile Include="core\assembler\vrc\sdk3\vrcavatardescriptor.cpp" />
+    <ClCompile Include="core\assembler\vrc\udon\serialization\odinserializer\properbitconverter.cpp" />
+    <ClCompile Include="core\assembler\vrc\ui\pageavatar.cpp" />
+    <ClCompile Include="core\assembler\vrc\sdkbase\networking.cpp" />
+    <ClCompile Include="core\assembler\vrc\sdkbase\vrcplayerapi.cpp" />
+    <ClCompile Include="core\assembler\vrc\sdkbase\eventhandler.cpp" />
+    <ClCompile Include="core\assembler\vrc\vrcsocialmenu.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="core\assembler\assembly-csharp\assetbundle_download_manager.hpp" />
+    <ClInclude Include="core\assembler\assembly-csharp\system\system_action.hpp" />
+    <ClInclude Include="core\assembler\assembly-csharp\system\collections\arraylist.hpp" />
+    <ClInclude Include="core\assembler\assembly-csharp\system\collections\queue.hpp" />
+    <ClInclude Include="core\assembler\assembly-csharp\udon_sync.hpp" />
+    <ClInclude Include="core\assembler\assembly-csharp\userselectionmanager.hpp" />
+    <ClInclude Include="core\assembler\assembly-csharp\vrc_tracking_manager.hpp" />
+    <ClInclude Include="core\assembler\mono\mono.hpp" />
+    <ClInclude Include="core\assembler\mono\structures\structues.h" />
+    <ClInclude Include="core\assembler\unityengine\animator.hpp" />
+    <ClInclude Include="core\assembler\unityengine\assetbundle.hpp" />
+    <ClInclude Include="core\assembler\unityengine\behaviour.hpp" />
+    <ClInclude Include="core\assembler\unityengine\capsulecollider.hpp" />
+    <ClInclude Include="core\assembler\unityengine\character_controller.hpp" />
+    <ClInclude Include="core\assembler\unityengine\linerenderer.hpp" />
+    <ClInclude Include="core\assembler\unityengine\rigidbody.hpp" />
+    <ClInclude Include="core\assembler\unityengine\webreq_assetbundle.hpp" />
+    <ClInclude Include="core\assembler\vrc\modules\game_modules.hpp" />
+    <ClInclude Include="core\assembler\vrc\modules\portable_mirror_modules.hpp" />
+    <ClInclude Include="core\assembler\vrc\modules\submenus\murder4_submenu.hpp" />
+    <ClInclude Include="core\assembler\vrc\sdkbase\vrc_mirror_reflection.hpp" />
+    <ClInclude Include="core\assembler\vrc\sdkbase\vrc_pickup.hpp" />
+    <ClInclude Include="core\hooks\helpers\assetbundle_processor.hpp" />
+    <ClInclude Include="core\hooks\helpers\camera_handler.hpp" />
+    <ClInclude Include="core\assembler\assembly-csharp\slider_slide_event.hpp" />
+    <ClInclude Include="core\assembler\assembly-csharp\ui_vrc_list.hpp" />
+    <ClInclude Include="core\assembler\il2cpp\structures\structures.h" />
+    <ClInclude Include="core\assembler\unityengine\ui\button.hpp" />
+    <ClInclude Include="core\assembler\assembly-csharp\buttonclickedevent.hpp" />
+    <ClInclude Include="core\assembler\assembly-csharp\dynamic_bone.hpp" />
+    <ClInclude Include="core\assembler\assembly-csharp\dynamic_bone_collider.hpp" />
+    <ClInclude Include="core\assembler\assembly-csharp\eventdata.hpp" />
+    <ClInclude Include="core\assembler\assembly-csharp\highlightsfx.hpp" />
+    <ClInclude Include="core\assembler\assembly-csharp\moderationmanager.hpp" />
+    <ClInclude Include="core\assembler\assembly-csharp\system\buffer.hpp" />
+    <ClInclude Include="core\assembler\unityengine\ui\slider.hpp" />
+    <ClInclude Include="core\assembler\unityengine\ui\toggle.hpp" />
+    <ClInclude Include="core\assembler\assembly-csharp\toggleclickedevent.hpp" />
+    <ClInclude Include="core\assembler\assembly-csharp\ui_manager_impl.hpp" />
+    <ClInclude Include="core\assembler\assembly-csharp\roommanager.hpp" />
+    <ClInclude Include="core\assembler\assembly-csharp\system\collections\dictionary.hpp" />
+    <ClInclude Include="core\assembler\assembly-csharp\uspeaker.hpp" />
+    <ClInclude Include="core\assembler\assembly-csharp\vrcplayer.hpp" />
+    <ClInclude Include="core\assembler\assembly-csharp\vrcuimanager.hpp" />
+    <ClInclude Include="core\assembler\assembly-csharp\vrcuipage.hpp" />
+    <ClInclude Include="core\assembler\assembly-csharp\vrcuipopupmanager.hpp" />
+    <ClInclude Include="core\assembler\assembly-csharp\player_nameplate.hpp" />
+    <ClInclude Include="core\assembler\assembly-csharp\vrc_event.hpp" />
+    <ClInclude Include="core\assembler\assembly-csharp\vrc_eventlog.hpp" />
+    <ClInclude Include="core\assembler\assembly-csharp\photon_player.hpp" />
+    <ClInclude Include="core\assembler\unityengine\layer_mask.hpp" />
+    <ClInclude Include="core\assembler\unityengine\xrdevice.hpp" />
+    <ClInclude Include="core\assembler\unityengine\cursor.hpp" />
+    <ClInclude Include="core\assembler\unityengine\xrsettings.hpp" />
+    <ClInclude Include="core\assembler\vrc\core\api_model.hpp" />
+    <ClInclude Include="core\assembler\vrc\core\pipeline_manager.hpp" />
+    <ClInclude Include="core\assembler\vrc\modules\config_modules.hpp" />
+    <ClInclude Include="core\assembler\vrc\modules\customization_modules.hpp" />
+    <ClInclude Include="core\assembler\vrc\modules\instance_history.hpp" />
+    <ClInclude Include="core\assembler\vrc\modules\lovense_modules.hpp" />
+    <ClInclude Include="core\assembler\vrc\modules\main_modules.hpp" />
+    <ClInclude Include="core\assembler\vrc\modules\menu_modules.hpp" />
+    <ClInclude Include="core\assembler\vrc\modules\misc2_modules.hpp" />
+    <ClInclude Include="core\assembler\vrc\modules\misc_modules.hpp" />
+    <ClInclude Include="core\assembler\vrc\modules\safety2_modules.hpp" />
+    <ClInclude Include="core\assembler\vrc\modules\safety_modules.hpp" />
+    <ClInclude Include="core\assembler\vrc\modules\submenus\notifier_submenu.hpp" />
+    <ClInclude Include="core\assembler\vrc\modules\submenus\rank_colors_submenu.hpp" />
+    <ClInclude Include="core\assembler\vrc\modules\submenus\spoofing_submenu.hpp" />
+    <ClInclude Include="core\assembler\vrc\modules\utility_modules.hpp" />
+    <ClInclude Include="core\config.hpp" />
+    <ClInclude Include="core\hooks\dx11.hpp" />
+    <ClInclude Include="core\hooks\eventmap.hpp" />
+    <ClInclude Include="core\hooks\events.hpp" />
+    <ClInclude Include="core\hooks\helpers\friend_tool.hpp" />
+    <ClInclude Include="core\hooks\helpers\nameplates.hpp" />
+    <ClInclude Include="core\hooks\helpers\game_manager.hpp" />
+    <ClInclude Include="core\hooks\helpers\portable_mirror.hpp" />
+    <ClInclude Include="core\hooks\helpers\xs_overlay.hpp" />
+    <ClInclude Include="core\hooks\patches.hpp" />
+    <ClInclude Include="core\lvm\env.hpp" />
+    <ClInclude Include="core\lvm\sol2\sol_config.hpp" />
+    <ClInclude Include="core\lvm\sol2\sol_forward.hpp" />
+    <ClInclude Include="core\lvm\sol2\sol.hpp" />
+    <ClInclude Include="core\lvm\vlvm.hpp" />
+    <ClInclude Include="core\menu.hpp" />
+    <ClInclude Include="core\sdk\datatypes\color.h" />
+    <ClInclude Include="core\sdk\datatypes\vector.h" />
+    <ClInclude Include="core\sdk\hash\fnv1a.h" />
+    <ClInclude Include="core\sdk\hash\xorstr.hpp" />
+    <ClInclude Include="core\sdk\input_system.hpp" />
+    <ClInclude Include="core\hooks\helpers\helpers.hpp" />
+    <ClInclude Include="core\submenus\sniffer.hpp" />
+    <ClInclude Include="dependencies\imgui\imconfig.h" />
+    <ClInclude Include="dependencies\imgui\imgui.h" />
+    <ClInclude Include="dependencies\imgui\imgui_freetype.h" />
+    <ClInclude Include="dependencies\imgui\imgui_impl_dx11.h" />
+    <ClInclude Include="dependencies\imgui\imgui_impl_win32.h" />
+    <ClInclude Include="dependencies\imgui\imgui_internal.h" />
+    <ClInclude Include="dependencies\imgui\imgui_stdlib.h" />
+    <ClInclude Include="dependencies\imgui\imstb_rectpack.h" />
+    <ClInclude Include="dependencies\imgui\imstb_textedit.h" />
+    <ClInclude Include="dependencies\imgui\imstb_truetype.h" />
+    <ClInclude Include="dependencies\kiero\kiero.h" />
+    <ClInclude Include="detours\cdetourhook.hpp" />
+    <ClInclude Include="core\sdk\datatypes\matrix.hpp" />
+    <ClInclude Include="core\sdk\datatypes\quaternion.hpp" />
+    <ClInclude Include="resource.h" />
+    <ClInclude Include="resources\checkmark.h" />
+    <ClInclude Include="resources\void_logo.h" />
+    <ClInclude Include="resources\whitney.h" />
+    <ClInclude Include="core\assembler\common.hpp" />
+    <ClInclude Include="detours\cinlinedetour.hpp" />
+    <ClInclude Include="discordrpc\discord.hpp" />
+    <ClInclude Include="globals.hpp" />
+    <ClInclude Include="offsets.hpp" />
+    <ClInclude Include="core\assembler\il2cpp\il2cpp.hpp" />
+    <ClInclude Include="core\assembler\il2cpp\array_wrapper.hpp" />
+    <ClInclude Include="core\assembler\tmpro\tmp_text.hpp" />
+    <ClInclude Include="core\assembler\unityengine\animation.hpp" />
+    <ClInclude Include="core\assembler\unityengine\application.hpp" />
+    <ClInclude Include="core\assembler\unityengine\boxcollider.hpp" />
+    <ClInclude Include="core\assembler\unityengine\camera.hpp" />
+    <ClInclude Include="core\assembler\unityengine\cloth.hpp" />
+    <ClInclude Include="core\assembler\unityengine\collider.hpp" />
+    <ClInclude Include="core\assembler\unityengine\component.hpp" />
+    <ClInclude Include="core\assembler\unityengine\events\action.hpp" />
+    <ClInclude Include="core\assembler\unityengine\events\event.hpp" />
+    <ClInclude Include="core\assembler\unityengine\gameobject.hpp" />
+    <ClInclude Include="core\assembler\unityengine\gizmos.hpp" />
+    <ClInclude Include="core\assembler\unityengine\gl.hpp" />
+    <ClInclude Include="core\assembler\unityengine\gui.hpp" />
+    <ClInclude Include="core\assembler\unityengine\image.hpp" />
+    <ClInclude Include="core\assembler\unityengine\input.hpp" />
+    <ClInclude Include="core\assembler\unityengine\material.hpp" />
+    <ClInclude Include="core\assembler\unityengine\mesh.hpp" />
+    <ClInclude Include="core\assembler\unityengine\meshfilter.hpp" />
+    <ClInclude Include="core\assembler\unityengine\meshrenderer.hpp" />
+    <ClInclude Include="core\assembler\unityengine\particlesystemrenderer.hpp" />
+    <ClInclude Include="core\assembler\unityengine\particle_system.hpp" />
+    <ClInclude Include="core\assembler\unityengine\ray.hpp" />
+    <ClInclude Include="core\assembler\unityengine\rect.hpp" />
+    <ClInclude Include="core\assembler\unityengine\recttransform.hpp" />
+    <ClInclude Include="core\assembler\unityengine\renderer.hpp" />
+    <ClInclude Include="core\assembler\unityengine\screen.hpp" />
+    <ClInclude Include="core\assembler\unityengine\shader.hpp" />
+    <ClInclude Include="core\assembler\unityengine\skinnedmeshrenderer.hpp" />
+    <ClInclude Include="core\assembler\unityengine\spherecollider.hpp" />
+    <ClInclude Include="core\assembler\unityengine\springjoint.hpp" />
+    <ClInclude Include="core\assembler\unityengine\sprite.hpp" />
+    <ClInclude Include="core\assembler\unityengine\texture.hpp" />
+    <ClInclude Include="core\assembler\unityengine\texture_2d.hpp" />
+    <ClInclude Include="core\assembler\unityengine\trailrenderer.hpp" />
+    <ClInclude Include="core\assembler\unityengine\transform.hpp" />
+    <ClInclude Include="core\assembler\unityengine\ui\graphic.hpp" />
+    <ClInclude Include="core\assembler\unityengine\ui\gridlayoutgroup.hpp" />
+    <ClInclude Include="core\assembler\unityengine\ui\selectable.hpp" />
+    <ClInclude Include="core\assembler\unityengine\ui\text.hpp" />
+    <ClInclude Include="core\assembler\assembly-csharp\vrc_eventreplicator.hpp" />
+    <ClInclude Include="core\assembler\unityengine\time.hpp" />
+    <ClInclude Include="core\assembler\unityengine\scene.hpp" />
+    <ClInclude Include="utilities\button_api.hpp" />
+    <ClInclude Include="utilities\drawing.hpp" />
+    <ClInclude Include="utilities\ingame_logging.hpp" />
+    <ClInclude Include="utilities\memory.hpp" />
+    <ClInclude Include="utilities\memory\pe32.h" />
+    <ClInclude Include="utilities\misc_utils.hpp" />
+    <ClInclude Include="core\sdk\hash\sha1.hpp" />
+    <ClInclude Include="utilities\utilities.hpp" />
+    <ClInclude Include="core\assembler\vrc\avatarmanager.hpp" />
+    <ClInclude Include="core\assembler\vrc\core\apiavatar.hpp" />
+    <ClInclude Include="core\assembler\vrc\core\apiuser.hpp" />
+    <ClInclude Include="core\assembler\vrc\core\apiworld.hpp" />
+    <ClInclude Include="core\assembler\vrc\core\apiworldinstance.hpp" />
+    <ClInclude Include="core\assembler\vrc\player.hpp" />
+    <ClInclude Include="core\assembler\vrc\playermanager.hpp" />
+    <ClInclude Include="core\assembler\vrc\sdk3\expressionsmenu.hpp" />
+    <ClInclude Include="core\assembler\vrc\sdk3\vrcavatardescriptor.hpp" />
+    <ClInclude Include="core\assembler\vrc\udon\serialization\odinserializer\properbitconverter.hpp" />
+    <ClInclude Include="core\assembler\vrc\ui\pageavatar.hpp" />
+    <ClInclude Include="core\assembler\vrc\sdkbase\networking.hpp" />
+    <ClInclude Include="core\assembler\vrc\sdkbase\vrcplayerapi.hpp" />
+    <ClInclude Include="core\assembler\vrc\sdkbase\eventhandler.hpp" />
+    <ClInclude Include="core\assembler\vrc\vrcquickmenu.hpp" />
+    <ClInclude Include="core\assembler\vrc\vrcsocialmenu.hpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Void.vcxproj.DotSettings" />
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="Void.rc" />
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+    <Import Project="$(VCTargetsPath)\BuildCustomizations\masm.targets" />
+  </ImportGroup>
+</Project>
